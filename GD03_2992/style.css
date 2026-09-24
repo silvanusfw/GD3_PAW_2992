@@ -23,3 +23,13 @@ p.bio {
     align-items: center;
     flex-wrap: wrap;
 }
+
+@media (max-width: 600px) {
+    .kontainer-profil {
+        flex-direction: column;
+        align-items: center;
+    }
+    table {
+        font-size: 12px;
+    }
+}
