@@ -8,11 +8,18 @@ h1 {
 }
 
 #judul {
-    color: green; 
+    color: green;
     text-align: center; 
 }
 
 p.bio {
     color: #444; 
     font-style: italic;
+}
+
+.kontainer-profil {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
 }
