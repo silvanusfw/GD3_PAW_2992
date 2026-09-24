@@ -2,17 +2,27 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Judul Halaman</title>
+    <title>HTML Silvanus</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Silvanus Febrianesha Widyatama</h1>
-    <img src="banana.jpg" alt="Ini foto pisang kuning" width="300">  
-    <p>NPM: 240712992</p>
+    <h1 id="judul">Silvanus Febrianesha Widyatama</h1>
+    
+    <!-- Dibungkus DIV -->
+    <div class="kontainer-profil">
+        <div>
+            <img src="banana.jpg" alt="Ini foto pisang kuning" width="300">  
+        </div>
+        <div>
+            <p class="bio">NPM: 240712992 - Software Engineering</p>
+        </div>
+    </div>
+    
     
     <!-- unordered list (mata kuliah yg diminati) -->
     <ul>
         <li>Dasar Pemrograman</li>
-        <li>PAW</li>
+        <li class="bio" >PAW</li>
         <li>PPL</li>
     </ul>
 
