@@ -10,6 +10,17 @@
     <br>
     <a href="form.html">FORM</a>
 
-    
+    <h1 id="judulHalaman">HALAMAN INTERAKTIF</h1>    
 </body>
+<script>
+    const judulHalaman = document.getElementById("judulHalaman");
+    judulHalaman.style.color = "red";
+    console.log(judulHalaman.innerHTML);
+
+    // FUNCTION
+    function sapa(nama){
+       console.log("Halo " + nama + "!"); 
+    }
+    console.log(sapa("Widi"));
+</script>
 </html>
