@@ -11,6 +11,10 @@
     <a href="form.html">FORM</a>
 
     <h1 id="judulHalaman">HALAMAN INTERAKTIF</h1>    
+
+    <p id="teks">Teks ini bisa berubah!</p>
+    <button onclick="ubahBiru()">Ubah ke Biru</button>
+
 </body>
 <script>
     const judulHalaman = document.getElementById("judulHalaman");
@@ -22,5 +26,12 @@
        console.log("Halo " + nama + "!"); 
     }
     console.log(sapa("Widi"));
+
+    // UBAH TOMBOL
+    function ubahBiru(){
+        const teks = document.getElementById("teks");
+        teks.style.color = "blue";
+    }
+
 </script>
 </html>
