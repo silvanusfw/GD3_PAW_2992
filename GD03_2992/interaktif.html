@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaktif Silvanus</title>
+</head>
+<body>
+    <a href="profil.html">PROFIL</a>
+    <br>
+    <a href="form.html">FORM</a>
+
+    <h1 id="judulHalaman">HALAMAN INTERAKTIF</h1>    
+
+    <p id="teks">Teks ini bisa berubah!</p>
+    <button onclick="ubahBiru()">Ubah ke Biru</button>
+    <br><br>
+
+    <form>
+        <label for="inputNama">Input Nama:</label><br>
+        <input type="text" name="nama" id="inputNama">
+        <br><br>
+
+        <button onclick="tampilkanNama()">Tampilkan</button>
+    </form>
+</body>
+<script>
+    const judulHalaman = document.getElementById("judulHalaman");
+    judulHalaman.style.color = "red";
+    console.log(judulHalaman.innerHTML);
+
+    // FUNCTION
+    function sapa(nama){
+       console.log("Halo " + nama + "!"); 
+    }
+    console.log(sapa("Widi"));
+
+    // UBAH TOMBOL
+    function ubahBiru(){
+        const teks = document.getElementById("teks");
+        teks.style.color = "blue";
+    }
+
+    // INPUT 
+    function tampilkanNama(){
+        const nama =  document.getElementById("inputNama").value;
+
+        if(nama === ""){
+            console.log(alert("Silakan isi nama dulu."));
+        }else{
+            console.log(alert("Halo, " + nama + "!"));
+        }
+    }
+</script>
+</html>
