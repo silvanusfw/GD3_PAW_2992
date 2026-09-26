@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interaktif Silvanus</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="profil.html" onclick="return confirm('Yakin pergi ke halaman Profil?')">PROFIL</a>
-    <br>
-    <a href="form.html" onclick="return confirm('Yakin pergi ke halaman Form?')">FORM</a>
+    <header class="header-profil">
+        <h1 class="judul-header">HALAMAN INTERAKTIF</h1>
+        <nav aria-label="Navigasi utama">
+            <a href="profil.html" onclick="return confirm('Yakin pergi ke halaman Profil?')">PROFIL</a>
+            <a href="form.html" onclick="return confirm('Yakin pergi ke halaman Form?')">FORM</a>
+            <a href="interaktif.html">INTERAKTIF</a>
+        </nav>
+    </header>
 
-    <h1 id="judulHalaman">HALAMAN INTERAKTIF</h1>    
+    <main class="konten-halaman">
+    <h1 id="judulHalaman">HALAMAN INTERAKTIF</h1>
 
     <p id="teks">Teks ini bisa berubah!</p>
     <button onclick="ubahBiru()">Ubah ke Biru</button>
@@ -30,6 +37,7 @@
 
         <button onclick="hitungKuadrat()">Kirim</button>
     </form>
+    </main>
 
 </body>
 

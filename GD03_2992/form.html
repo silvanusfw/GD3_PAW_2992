@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Silvanus</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="profil.html" onclick="return confirm('Yakin pergi ke halaman Profil?')">PROFIL</a>
-    <br>
-    <a href="interaktif.html" onclick="return confirm('Yakin pergi ke halaman Interaktif?')">INTERAKTIF</a>
-    <br><br>
+    <header class="header-profil">
+        <h1 class="judul-header">FORM SILVANUS</h1>
+        <nav aria-label="Navigasi utama">
+            <a href="profil.html" onclick="return confirm('Yakin pergi ke halaman Profil?')">PROFIL</a>
+            <a href="form.html">FORM</a>
+            <a href="interaktif.html" onclick="return confirm('Yakin pergi ke halaman Interaktif?')">INTERAKTIF</a>
+        </nav>
+    </header>
 
-    <form>
+    <main class="konten-halaman">
+        <form>
         <!-- NAMA (TEXT) -->
         <label for="inputNama">Nama:</label> <br>
         <input type="text" id="inputNama" name="nama" placeholder="Masukkan Nama">
@@ -47,7 +53,8 @@
 
         <!-- SUBMIT BTN -->
         <input type="submit" value="Kirim">
-    </form>
+        </form>
+    </main>
 
 </body>
 </html>
