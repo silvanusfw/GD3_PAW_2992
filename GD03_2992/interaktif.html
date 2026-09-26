@@ -6,9 +6,9 @@
     <title>Interaktif Silvanus</title>
 </head>
 <body>
-    <a href="profil.html">PROFIL</a>
+    <a href="profil.html" onclick="return confirm('Yakin pergi ke halaman Profil?')">PROFIL</a>
     <br>
-    <a href="form.html">FORM</a>
+    <a href="form.html" onclick="return confirm('Yakin pergi ke halaman Form?')">FORM</a>
 
     <h1 id="judulHalaman">HALAMAN INTERAKTIF</h1>    
 
@@ -19,11 +19,20 @@
     <form>
         <label for="inputNama">Input Nama:</label><br>
         <input type="text" name="nama" id="inputNama">
-        <br><br>
 
         <button onclick="tampilkanNama()">Tampilkan</button>
     </form>
+    <br>
+
+    <form>
+        <label for="inputAngka">Masukkan Angka untuk Hitung Kuadrat:</label><br>
+        <input type="number" name="angka" id="inputAngka">
+
+        <button onclick="hitungKuadrat()">Kirim</button>
+    </form>
+
 </body>
+
 <script>
     const judulHalaman = document.getElementById("judulHalaman");
     judulHalaman.style.color = "red";
@@ -41,7 +50,7 @@
         teks.style.color = "blue";
     }
 
-    // INPUT 
+    // INPUT NAMA
     function tampilkanNama(){
         const nama =  document.getElementById("inputNama").value;
 
@@ -51,5 +60,17 @@
             console.log(alert("Halo, " + nama + "!"));
         }
     }
+
+    // INPUT ANGKA (CARI KUADRAT)
+
+    function hitungKuadrat(){
+        const angka = document.getElementById("inputAngka").value;
+        
+        if(angka === ""){
+            console.log(alert("Silakan isi angka dulu."));
+        }else{
+            console.log(alert("Hasil kuadrat dari " + angka + " adalah " + angka * angka));
+        }
+    }   
 </script>
 </html>
