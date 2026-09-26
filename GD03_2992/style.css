@@ -137,6 +137,60 @@ h1 {
     padding: 96px 32px 32px;
 }
 
+.form-card {
+    width: min(100%, 560px);
+    margin: 0 auto;
+    padding: 32px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    background: rgb(234, 224, 207);
+    text-align: left;
+}
+
+.form-card input[type="text"],
+.form-card input[type="email"],
+.form-card select,
+.form-card textarea {
+    width: 100%;
+    margin-top: 8px;
+    padding: 12px 14px;
+    border: 1px solid rgb(84, 119, 146);
+    border-radius: 10px;
+    box-sizing: border-box;
+    font: inherit;
+    background: white;
+}
+
+.form-card textarea {
+    resize: vertical;
+}
+
+.form-card input[type="text"]:focus,
+.form-card input[type="email"]:focus,
+.form-card select:focus,
+.form-card textarea:focus {
+    outline: 2px solid rgb(84, 119, 146);
+    outline-offset: 1px;
+}
+
+.form-card input[type="submit"] {
+    width: 100%;
+    margin-top: 4px;
+    padding: 12px 20px;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    background: #2e8b57;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-card input[type="submit"]:hover,
+.form-card input[type="submit"]:focus {
+    background: #246b44;
+}
+
 p.bio {
     color: #444; 
     font-style: italic;
@@ -182,6 +236,10 @@ p.bio {
 
     .konten-halaman {
         padding: 128px 20px 20px;
+    }
+
+    .form-card {
+        padding: 24px 18px;
     }
 
     .kontainer-profil {
