@@ -16,27 +16,29 @@
         </nav>
     </header>
 
-    <main class="konten-halaman">
-    <h1 id="judulHalaman">HALAMAN INTERAKTIF</h1>
+    <main class="konten-halaman konten-interaktif">
+        <h1 id="judulHalaman">HALAMAN INTERAKTIF</h1>
 
-    <p id="teks">Teks ini bisa berubah!</p>
-    <button onclick="ubahBiru()">Ubah ke Biru</button>
-    <br><br>
+        <section class="kartu-interaktif">
+            <p id="teks">Teks ini bisa berubah!</p>
+            <button type="button" onclick="ubahBiru()">Ubah ke Biru</button>
+        </section>
 
-    <form>
-        <label for="inputNama">Input Nama:</label><br>
-        <input type="text" name="nama" id="inputNama">
+        <section class="kartu-interaktif">
+            <form>
+                <label for="inputNama">Input Nama:</label>
+                <input type="text" name="nama" id="inputNama">
+                <button type="button" onclick="tampilkanNama()">Tampilkan</button>
+            </form>
+        </section>
 
-        <button onclick="tampilkanNama()">Tampilkan</button>
-    </form>
-    <br>
-
-    <form>
-        <label for="inputAngka">Masukkan Angka untuk Hitung Kuadrat:</label><br>
-        <input type="number" name="angka" id="inputAngka">
-
-        <button onclick="hitungKuadrat()">Kirim</button>
-    </form>
+        <section class="kartu-interaktif">
+            <form>
+                <label for="inputAngka">Masukkan Angka untuk Hitung Kuadrat:</label>
+                <input type="number" name="angka" id="inputAngka">
+                <button type="button" onclick="hitungKuadrat()">Kirim</button>
+            </form>
+        </section>
     </main>
 
 </body>

@@ -191,6 +191,62 @@ h1 {
     background: #246b44;
 }
 
+.konten-interaktif {
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.konten-interaktif h1 {
+    margin: 0;
+}
+
+.kartu-interaktif {
+    width: min(100%, 560px);
+    padding: 24px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    background: rgb(234, 224, 207);
+}
+
+.kartu-interaktif p {
+    margin-top: 0;
+}
+
+.kartu-interaktif form {
+    display: grid;
+    gap: 12px;
+    text-align: left;
+}
+
+.kartu-interaktif input[type="text"],
+.kartu-interaktif input[type="number"] {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid rgb(84, 119, 146);
+    border-radius: 10px;
+    box-sizing: border-box;
+    font: inherit;
+    background: white;
+}
+
+.kartu-interaktif button {
+    padding: 12px 20px;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    background: rgb(84, 119, 146);
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.kartu-interaktif button:hover,
+.kartu-interaktif button:focus {
+    background: rgb(33, 52, 72);
+}
+
 p.bio {
     color: #444; 
     font-style: italic;
