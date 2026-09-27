@@ -7,92 +7,105 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="form.html" onclick="return confirm('Yakin pergo ke halaman Form?')">FORM</a>
-    <br>
-    <a href="interaktif.html" onclick="return confirm('Yakin pergi ke halaman Interaktif?')">INTERAKTIF</a>
+    <header class="header-profil">
+        <h1 id="judul">Silvanus Febrianesha Widyatama</h1>
+        <nav aria-label="Navigasi utama">
+            <a href="profil.html">PROFIL</a>
+            <a href="form.html" onclick="return confirm('Yakin pergi ke halaman Form?')">FORM</a>
+            <a href="interaktif.html" onclick="return confirm('Yakin pergi ke halaman Interaktif?')">INTERAKTIF</a>
+        </nav>
+    </header>
 
-    <h1 id="judul">Silvanus Febrianesha Widyatama</h1>
-    
-    <!-- Dibungkus DIV -->
-    <div class="kontainer-profil">
-        <div>
-            <img src="banana.jpg" alt="Ini foto pisang kuning" width="300">  
-        </div>
-        <div>
-            <p class="bio">NPM: 240712992 - Software Engineering</p>
-        </div>
-    </div>
-    <br>
-    
-    <!-- unordered list (mata kuliah yg diminati) -->
-    <label>Mata Kuliah yang Diminati:</label>
-    <ul>
-        <li>Dasar Pemrograman</li>
-        <li class="bio" >PAW</li>
-        <li>PPL</li>
-    </ul>
-    <br> 
+    <main class="konten-profil">
+        <section class="kartu-profil kartu-identitas">
+            <div class="kontainer-profil">
+                <div>
+                    <img src="banana.jpg" alt="Ini foto pisang kuning" width="300">
+                </div>
+                <div>
+                    <p class="bio">NPM: 240712992</p>
+                    <p class="bio">Peminatan: Software Engineering</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- ordered list (rencana belajar) -->
-    <label>Rencana Belajar:</label>
-    <ol>
-        <li>Belajar Web Dasar</li>
-        <li>Belajar Github</li>
-        <li>Belajar Framework</li>
-    </ol>
-    <br>
+        <section class="kartu-profil kartu-rencana">
+            <div class="kolom-belajar">
+                <div>
+                    <label>Mata Kuliah yang Diminati:</label><br>
+                    <ul>
+                        <li>Dasar Pemrograman</li>
+                        <li class="bio">PAW</li>
+                        <li>PPL</li>
+                    </ul>
+                </div>
+                <div>
+                    <label>Rencana Belajar:</label><br>
+                    <ol>
+                        <li>Belajar Web Dasar</li>
+                        <li>Belajar Github</li>
+                        <li>Belajar Framework</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
 
-    <label>Jadwal Kuliah:</label>
-    <table border="1">
-        <tr>
-            <th>Sesi</th>
-            <th>Senin</th>
-            <th>Selasa</th>
-            <th>Rabu</th>
-            <th>Kamis</th>
-            <th>Jumat</th>
-        </tr>
-        <tr>
-            <td>Sesi 1</td>
-            <td>Kewirausahaan</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td>Sesi 2</td>
-            <td>-</td>
-            <td>Etika Profesi</td>
-            <td>PPLA</td>
-            <td>-</td>
-            <td>APL</td>
-        </tr>
-        <tr>
-            <td>Sesi 3</td>
-            <td>-</td>
-            <td>-</td>
-            <td>Manajemen Proyek</td>
-            <td>PAW</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td>Sesi 4</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>PPL</td>
-            <td>Desain Interaksi</td>
-        </tr>
-        <tr>
-            <td>Sesi 5</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-        </tr>
-    </table>
+        <section class="kartu-profil kartu-jadwal">
+            <label>Jadwal Kuliah:</label>
+            <div class="tabel-responsif">
+                <table>
+                    <tr>
+                        <th>Sesi</th>
+                        <th>Senin</th>
+                        <th>Selasa</th>
+                        <th>Rabu</th>
+                        <th>Kamis</th>
+                        <th>Jumat</th>
+                    </tr>
+                    <tr>
+                        <td>Sesi 1</td>
+                        <td>Kewirausahaan</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Sesi 2</td>
+                        <td>-</td>
+                        <td>Etika Profesi</td>
+                        <td>PPLA</td>
+                        <td>-</td>
+                        <td>APL</td>
+                    </tr>
+                    <tr>
+                        <td>Sesi 3</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>Manajemen Proyek</td>
+                        <td>PAW</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Sesi 4</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>PPL</td>
+                        <td>Desain Interaksi</td>
+                    </tr>
+                    <tr>
+                        <td>Sesi 5</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
 
 </body>
 </html>
